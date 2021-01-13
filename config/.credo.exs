@@ -70,8 +70,7 @@
         # You can customize the priority of any check
         # Priority values are: `low, normal, high, higher`
         #
-        {Credo.Check.Design.AliasUsage,
-         [priority: :low, if_nested_deeper_than: 2, if_called_more_often_than: 0]},
+        {Credo.Check.Design.AliasUsage, [priority: :low, if_nested_deeper_than: 2, if_called_more_often_than: 0]},
         # Don't cause to-do comments to fail
         {Credo.Check.Design.TagTODO, [exit_status: 0]},
         {Credo.Check.Design.TagFIXME, []},
@@ -157,7 +156,7 @@
         {Credo.Check.Refactor.VariableRebinding, []},
         # Tyler says: I like this one
         {Credo.Check.Warning.MapGetUnsafePass, []},
-        {Credo.Check.Warning.UnsafeToAtom, []},
+        {Credo.Check.Warning.UnsafeToAtom, []}
       ]
     }
   ]
