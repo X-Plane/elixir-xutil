@@ -22,7 +22,8 @@ defmodule XUtil.MixProject do
   defp deps do
     [
       {:comb, git: "https://github.com/tallakt/comb.git", tag: "master"},
-      {:assertions, "~> 0.10", only: :test}
+      {:assertions, "~> 0.10", only: :test},
+      {:credo, "~> 1.5.1", only: [:dev, :test], runtime: false}
     ]
   end
 
