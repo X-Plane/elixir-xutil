@@ -28,7 +28,7 @@ defmodule XUtil.Time do
   "9999-12-31T23:59:58.999Z"
   """
   def timestamp_to_iso8601(unix_timestamp)
-       when is_integer(unix_timestamp) and unix_timestamp > -377_705_116_800_000 and unix_timestamp < 253_402_300_799_000 do
+      when is_integer(unix_timestamp) and unix_timestamp > -377_705_116_800_000 and unix_timestamp < 253_402_300_799_000 do
     unix_timestamp |> DateTime.from_unix!(:millisecond) |> DateTime.to_iso8601()
   end
 end
