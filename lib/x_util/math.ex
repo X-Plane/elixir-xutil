@@ -87,6 +87,9 @@ defmodule XUtil.Math do
 
   def meters_sec_to_knots(speed_msc), do: speed_msc * 1.9438445
 
+  def meters_to_feet(meters), do: meters * 3.2808399
+  def feet_to_meters(feet), do: feet / 3.2808399
+
   @pi 3.14159265359
   @pi_over_180 3.14159265359 / 180.0
   @mean_earth_radius_meters 6_371_008.8
