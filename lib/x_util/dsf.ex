@@ -69,7 +69,7 @@ defmodule XUtil.Dsf do
   Handles equatorial/international dateline wrapping.
 
       iex(1)> XUtil.Dsf.dsfs_at_offset({-180, -30}, 1)
-      #MapSet<[{-180, -31}, {-180, -29}, {-179, -31}, {-179, -30}, {-179, -29}, {179, -31}, {179, -30}, {179, -29}]>
+      MapSet.new([{-180, -31}, {-180, -29}, {-179, -31}, {-179, -30}, {-179, -29}, {179, -31}, {179, -30}, {179, -29}])
   """
   def dsfs_at_offset(base_dsf, offset)
 
