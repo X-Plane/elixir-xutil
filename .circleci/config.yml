@@ -14,7 +14,7 @@ jobs:
 
     working_directory: ~/repo
     steps:
-      - checkout
+      - run: git clone https://github.com/X-Plane/elixir-xutil.git .
       - run: git submodule update --init --remote
       - run: mix local.hex --force
 
